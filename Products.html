@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Featured Products</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        /* nav{
+            width: 100%;
+            margin: auto;
+            padding: 40px;
+            background-color: #1E293B;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        } */
+        /* .head > h1{
+            text-align: center;
+            color: #C084FC;
+            font-size: 2.1rem;
+            margin-bottom: 10px;
+        }
+        .head >p{
+            text-align: center;
+            margin-top: 0px;
+            color: #c1bebe;
+            font-size: 18px;
+        } */
+        body{
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            background-color: #111827;
+         }
+        .container{
+            max-width: 1200px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            margin-top: 60px;
+            padding-left: 90px;
+        }
+        /* .item{
+            max-width: 300px;
+            height: 350px;
+            background-color: #fff;
+            padding: 15px;
+            border: 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px 2px rgba(180, 180, 180, 0.5);
+        }
+        .item1{
+            margin: 5px 5px;
+        }
+        .item >img{
+            width: 100%;
+        } */
+        /* .title{
+            font-weight: bold;
+            font-size: 18px;
+            color: #5a4bda;
+        }
+        .educator{
+            font-size: 15px;
+            font-weight: lighter;
+        }*/
+        button{
+            margin-right: 36px;
+            padding: 11px 30px;
+            border-radius: 40px 40px;
+            background-color: #2CDAFF;
+            color: #fff;
+            font-weight: 700;
+        } 
+
+        button:hover{
+            background-color: #54178a;
+        }
+        .item button{
+            margin-top: 25px;
+            margin-left: 100px;
+        }
+        button a{
+            color: #fff;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        
+       
+
+   </style>
+</head>
+<body>
+      <nav>
+            <div class="nav-menu-icon">
+                <img src="./assets/menu-icon.png" alt="Menu-Icon">
+            </div>
+            <div class="logo-image">
+            <img src="./Assests/logoo.png" alt="">
+            <span class="logo-text">Giftos</span></div>
+    
+            <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="Products.html">Products</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            </div>
+    
+            <div class="icons">
+                <a href="#"><i class="fa fa-heart-o" style="font-size:24px; color:#fff"></a></i>
+                <a href="#"><i class="fa fa-shopping-cart" style="font-size:24px; color:#fff"></a></i>
+            </div>
+    
+            <div class="profile-icon">
+                <img src="./assets/user-profile.png" alt="Profile-Icon">
+            </div>
+        </nav>
+   
+
+    <div class="head">
+        <h1>Featured Products</h1>
+    </div>
+
+    <div class="container">
+        <div class="item item1">
+            <img src="./Assests/Teddy1.jpg" alt="Web Development">
+            <p class="title">Soft Teddy's</p>
+            <div class="stars">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+        </div>
+            <button><a href="Teddy.html">Explore</a></button>
+        </div>
+
+        <div class="item item2">
+            <img src="./Assests/Cup.jpg" alt="banking & Financial services">
+            <p class="title">Coffee Cups</p>
+            <div class="stars">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </div>
+            <button><a href="Cup.html">Explore</a></button>
+        </div>
+
+        <div class="item item3">
+            <img src="./Assests/shirt1.jpg" alt="Introduction to React">
+            <p class="title">Branded Shirts</p>
+            <div class="stars">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+            </div>
+            <button><a href="Shirt.html">Explore</a></button>
+        </div>
+
+        <div class="item item3">
+            <img src="./Assests/Nike shoes1.jpg" alt="stock market">
+            <p class="title">Nike Shoes</p>
+            <div class="stars">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+            </div>
+            <button><a href="Shoes.html">Explore</a></button>
+        </div>
+
+        <div class="item item3">
+            <img src="./Assests/candles jar.jpg" alt="Javascript">
+            <p class="title">Candles Jar</p>
+            <div class="stars">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </div>
+            <button><a href="Jar.html">Explore</a></button>
+        </div>
+
+        <div class="item item3">
+            <img src="./Assests/hamperr.jpg" alt="stock market">
+            <p class="title">Gift Hampers</p>
+            <div class="stars">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+            </div>
+            <button><a href="Hamper.html">Explore</a></button>
+        </div>
+
+        <div class="item item3">
+            <img src="./Assests/Diwali gift hamper.jpg" alt="Introduction to React">
+            <p class="title">Diwali Gift Hamper</p>
+            <div class="stars">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </div>
+            <button><a href="#">Explore</a></button>
+        </div>
+
+        <div class="item item3">
+            <img src="./Assests/juicer.jpg" alt="Introduction to React">
+            <p class="title">juicer-Grinder</p>
+            <div class="stars">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </div>
+            <button><a href="#">Explore</a></button>
+        </div>
+
+        <div class="item item3">
+            <img src="./Assests/sports.jpg" alt="Introduction to React">
+            <p class="title">Sports Accessories</p>
+            <div class="stars">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+            </div>
+            <button><a href="#">Explore</a></button>
+        </div>
+
+</body>
+</html>

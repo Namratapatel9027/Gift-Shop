@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Gift Shop| Login</title>
+    <style>
+    body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("Assests/loginbg.jpg");
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+.box {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container_login {
+    padding: 40px;
+    width: 300px;
+}
+
+.top header {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-field_login {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-field_login input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(5px);
+}
+
+.input-field_login input:focus {
+    outline: none;
+    border-color: rgba(0, 0, 0, 0.5);
+}
+
+.input-field_login i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 14px;
+    color: #555;
+}
+
+.submit {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background-color: #0056b3;
+}
+
+.two-col {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.one {
+    display: flex;
+    align-items: center;
+}
+
+.two {
+    text-align: right;
+}
+
+.checkbox input {
+    margin-right: 5px;
+}
+
+.checkbox label {
+    color: #333;
+}
+
+.checkbox label a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.checkbox label a:hover {
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body id="body_login">
+    <script>
+        function login(){
+            var user = document.getElementById("username").value;
+            var pass = document.getElementById("password").value;
+            
+            if(user=='Krushika' && pass=='123'){
+                window.location.assign("index.html");
+            }
+            else{
+                alert("Invalid Username or Password");
+            }
+        }
+    </script>
+   <div class="box">
+    <div class="container_login">
+
+        <div class="top">
+            <header>Login</header>
+        </div>
+
+        <div class="input-field_login">
+            <input type="text" class="input_login" placeholder="Username" id="username">
+            <i class='bx bx-user' ></i>
+        </div>
+
+        <div class="input-field_login">
+            <input type="Password" class="input_login" placeholder="Password" id="password">
+            <i class='bx bx-lock-alt'></i>
+        </div>
+
+        <div class="input-field">
+            <input type="submit" class="submit" value="Login" id="" onclick="login()">
+        </div>
+
+        <div class="two-col">
+            <div class="one">
+               <input type="checkbox" name="" id="check">
+               <label for="check">Remember Me</label>
+            </div>
+            <div class="two">
+                <label><a href="#">Forgot password?</a></label>
+            </div>
+        </div>
+    </div>
+</div>  
+</body>
+</html>
